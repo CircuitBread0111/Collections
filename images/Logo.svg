@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="154.00563mm"
+   height="80.547173mm"
+   viewBox="0 0 154.00563 80.547173"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-30.746925,-194.22612)">
+    <ellipse
+       style="fill:#000000;stroke-width:0.264583"
+       id="path1"
+       cx="107.74974"
+       cy="265.08737"
+       rx="77.002815"
+       ry="9.6859121" />
+    <ellipse
+       style="fill:#000000;stroke-width:0.264583"
+       id="path2"
+       cx="106.64992"
+       cy="213.42976"
+       rx="57.518692"
+       ry="8.085825" />
+    <rect
+       style="fill:#000000;stroke-width:0.264583"
+       id="rect2"
+       width="78.31147"
+       height="46.46936"
+       x="68.215332"
+       y="215.6387" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;white-space:pre;inline-size:0;fill:#000000;stroke-width:0.264583"
+       x="71.164917"
+       y="191.39609"
+       id="text2"
+       transform="translate(-11.243306,13.060575)"><tspan
+         id="tspan2"
+         style="font-size:14.1111px;stroke-width:0.264583"
+         x="71.164917"
+         y="191.39609">COLLECTIONS</tspan></text>
+  </g>
+</svg>
