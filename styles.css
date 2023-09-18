@@ -2,13 +2,14 @@ body {
     background-color: rgb(200, 215, 225);
 }
 
+
 h1 {
-    text-align: center;
+    text-align: left;
     background-color: rgb(255, 255, 255);
 }
 
 p {
-    text-align:left;
+    text-align: left;
 }
 
 .center {
@@ -18,25 +19,32 @@ p {
     width: 50%;
 }
 
+.logo { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 10%
+}
+
 .pfp {
     display: block;
     margin-left: auto;
     margin-right: 75%;
-    height: 50%;
-    width: 50%;
-  }
-  
+    height: 25%;
+    width: 25%;
+}
+
 .link {
 	display: block;
-	text-align: center;
 	background-color: rgb(255, 255, 255);
 }
 
+.features {
+	align-items: left;
+	display: flex;
+}
+
 .dia {
-    display: block;
-    margin-left: 75%;
-    margin-right: auto;
     height: 25%;
-    width: 25%;
-  }
-  
+}
+
