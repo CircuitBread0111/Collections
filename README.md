@@ -1,6 +1,6 @@
-# Project
+# TeamRust
 
-CS-400 Software Engineering Project
+CS-400 Software Engineering Project for Team Rust
 
 ## What is Collections?
 
