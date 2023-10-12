@@ -1,50 +1,26 @@
 body {
-    background-color: rgb(200, 215, 225);
+    background-color: rgb(235, 235, 235);
 }
-
 
 h1 {
-    text-align: left;
-    background-color: rgb(255, 255, 255);
+    float:left;
+    text-align: start;
+    font-size: larger;
+    font-family: Arial;
+    
 }
 
-p {
-    text-align: left;
+h2 {
+    text-align: end;
+    font-size: small;
+    font-style: italic;
+    font-family: Arial;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.fl {
+    float:left'
 }
 
-.logo { 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: 10%
+.fr {
+    float:right;
 }
-
-.pfp {
-    display: block;
-    margin-left: auto;
-    margin-right: 75%;
-    height: 25%;
-    width: 25%;
-}
-
-.link {
-	display: block;
-	background-color: rgb(255, 255, 255);
-}
-
-.features {
-	align-items: left;
-	display: flex;
-}
-
-.dia {
-    height: 25%;
-}
-
