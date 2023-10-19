@@ -14,4 +14,4 @@ Other names considered were cshelf and CVO.
 
 ## Product Vision Statement
 
-For collectors who need an easy and convenient way to organize their collection, Collections is a visual organizer that provides a simple and visual way to organize collections. Unlike spreadsheets, which are wordy and complicated, our product solves this issue by visually organizing your items to your liking.
+For the hobbyist who needs a tool to organize physical collections like coins, stamps, games, etc., Collections is a visual organizer that provides a simple, visual way to store and retrieve information about a physical collection. Unlike spreadsheets, which are text-based and complicated, our product allows the hobbyist to easily add or view descriptions and images of items in the collection in one interface.
