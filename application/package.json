@@ -1,0 +1,35 @@
+{
+  "name": "collections-app",
+  "version": "1.0.0",
+  "description": "A visual organizer app that aims to be convenient and easy to use.",
+  "main": "app.js",
+  "scripts": {
+  	"start": "node app.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CircuitBread0111/TeamRust.git"
+  },
+  "keywords": [
+    "collections",
+    "organizer",
+    "visual",
+    "catalog",
+    "hobby",
+    "collector"
+  ],
+  "author": "Jerrin Redmon, Will Brown",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "vue": "^3.3.9",
+    "vue-resource": "^1.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/CircuitBread0111/TeamRust/issues"
+  },
+  "homepage": "https://github.com/CircuitBread0111/TeamRust#readme"
+}
