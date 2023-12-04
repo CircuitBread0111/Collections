@@ -51,8 +51,7 @@ const app = Vue.createApp({
 				})
 					.then((res) => {
 						console.log(res);
-						let index = this.items[id];
-						this.items.splice(index, 1);
+						this.items.splice(id, 1);
 					})
 					.catch((err) => {
 						console.log(err);

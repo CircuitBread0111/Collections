@@ -24,7 +24,12 @@
 		</div>
 		<div class="container">
 			<div class="list-group">
-				<p class="list-group-item" v-for="item in items">{{ item.name }}</p>
+				<div class="list-group-item" v-for="(item, id) in items">
+					<div class="row">
+						<p class="col-sm-11">{{ item.name }}</p>
+						<button type="button" class="col-sm-1" v-on:click="deleteItem(id)">Delete</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
