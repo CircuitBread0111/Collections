@@ -1,7 +1,6 @@
 const app = Vue.createApp({
 	data() {
-		return {		
-			item: { name: "test" },
+		return {
 			items: []
 		}
 	},
@@ -26,17 +25,17 @@ const app = Vue.createApp({
 				});
 		},
 		
-		addItem() {
-			if (this.item.name.trim()) {
+		addItem(item) {
+			if (item.name.trim()) {
 				fetch("/api/items", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json"
 					},
-					body: this.item
+					body: JSON.stringify(item)
 				})
 					.then((res) => {
-						this.items.push(this.item);
+						this.items.push(item);
 						console.log("Item added!");
 					})
 					.catch((err) => {
@@ -52,13 +51,18 @@ const app = Vue.createApp({
 				})
 					.then((res) => {
 						console.log(res);
-						let index = this.items.find(x => x.id === id);
+						let index = this.items[id];
 						this.items.splice(index, 1);
 					})
 					.catch((err) => {
 						console.log(err);
 					});
 			}
+		},
+		
+		newItem() {
+			let item = { name: prompt("Enter the name of your new item") };
+			this.addItem(item);
 		}
 	}
 }).mount("body");
