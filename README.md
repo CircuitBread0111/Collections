@@ -2,6 +2,28 @@
 
 CS-400 Software Engineering Project for Team Rust
 
+## Build Instructions
+
+### Locally
+
+If you have a recent release of Node.js installed, you can simply build and run the server like any other Node application:
+
+```sh
+$ cd application
+$ npm install
+$ node app.js
+```
+
+### With Docker
+
+To build a container named collections and run an interactive session under port 8080:
+
+```sh
+$ cd application
+$ docker build -t collections .
+$ docker run -it -p 8080:8080 collections
+```
+
 ## What is Collections?
 
 Collections is a visual organizer app that aims to be convenient and easy to use.
