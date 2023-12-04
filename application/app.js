@@ -32,9 +32,9 @@ if ('production' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/api/items', api.items);
-app.post('/api/items', api.item);
-app.delete('/api/items/:itemId', api.item);
+app.get('/api/items', api.getItems);
+app.post('/api/items', api.putItem);
+app.delete('/api/items/:id', api.deleteItem);
 
 app.listen(APP_PORT);
 console.log("App running on port " + APP_PORT);
