@@ -1,53 +1,64 @@
-new Vue({
-	el: "#items",
-	
-	data: {
-		item: { name: "" },
-		items: []
+const app = Vue.createApp({
+	data() {
+		return {		
+			item: { name: "test" },
+			items: []
+		}
 	},
 	
-	ready: () => {
+	mounted() {
 		this.fetchItems();
 	},
 	
 	methods: {
-		fetchItems: () => {
-			let items = [];
-			this.$http.get("/api/items")
-				.success(() => {
-					this.$set("items", items);
-					console.log(items);
+		fetchItems() {
+			fetch("/api/items", {
+				method: "GET",
+				headers: { "Content-Type": "application/json"}
+			})
+				.then((res) => {
+					res.json().then((items) => {
+						this.items = items;
+					});
 				})
-				.error((err) => {
-					conole.log(err);
+				.catch((err) => {
+					console.log(err);
 				});
 		},
 		
-		addItem: () => {
+		addItem() {
 			if (this.item.name.trim()) {
-				this.$http.post("/api/items", this.item)
-					.success((res) => {
+				fetch("/api/items", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: this.item
+				})
+					.then((res) => {
 						this.items.push(this.item);
 						console.log("Item added!");
 					})
-					.error((err) => {
+					.catch((err) => {
 						console.log(err);
 					});
 			}
 		},
 		
-		deleteItem: (id) => {
+		deleteItem(id) {
 			if (confirm("Are you sure you want to delete this item?")) {
-				this.$http.delete("api/items/" + id)
-					.success((res) => {
+				fetch("api/items/" + id, {
+					method: "DELETE"
+				})
+					.then((res) => {
 						console.log(res);
 						let index = this.items.find(x => x.id === id);
 						this.items.splice(index, 1);
 					})
-					.error((err) => {
+					.catch((err) => {
 						console.log(err);
 					});
 			}
 		}
-	},
-});
+	}
+}).mount("body");
