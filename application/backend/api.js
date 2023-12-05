@@ -25,6 +25,10 @@ exports.putItem = (req, res) => {
 
 exports.deleteItem = (req, res) => {
 	const { id } = req.params;
-	items.splice(id, 1);
-	res.status(204).send();
+	if (id < items.length) {
+		items.splice(id, 1);
+		res.status(204).send();	
+	} else {
+		res.status(404).send();
+	}
 }
