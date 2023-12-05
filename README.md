@@ -14,6 +14,12 @@ $ npm install
 $ node app.js
 ```
 
+To run unit tests:
+
+```sh
+$ npm test
+```
+
 ### With Docker
 
 To build a container named collections and run an interactive session under port 8080:
@@ -22,6 +28,12 @@ To build a container named collections and run an interactive session under port
 $ cd application
 $ docker build -t collections .
 $ docker run -it -p 8080:8080 collections
+```
+
+To run unit tests in an interactive session:
+
+```sh
+$ docker run -it collections npm test
 ```
 
 ## What is Collections?
